@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A hero's journey</title>
+    <link rel="stylesheet" href="herosstyles.css">
+    <script defer src="workings.js"></script>
+</head>
+<body style="background-image: url('images/Left\ -\ Sunrise.png'); overflow-y: scroll;">
+    <header style="font-size: 30px; position: fixed; text-align: center; width: 100%; top: 20%; left: 0%;">
+        <h1 class="fade-in-text" style="color: #a4a962;" id="earthTitle2">Current Progress and How I know</h1>
+    </header>
+    <blockquote id="blockquoteDay" style="background-color: white; display: none;">Exploring the galaxy leaves you fulfilled, but it makes you yearn to go home. All you want to do is take a moment and reflect on the journey so far.</blockquote>
+    <button style="top: 50%; left: 50%; position: absolute;"onclick="earthDay()" id="button4">Press me</button>
+    <div style="position: absolute;  background-color: #a4a962; color: white; border-radius: 10px; padding: 20px; width: 50%; height: fit-content; top: 10%; left: 5%; " id="earthContent">
+        <h2 style="color: #F5EED0;">Al worden Endeavour Scholarship</h2>
+        <div id="alWorden" style="text-align: left;">
+          <p style="text-align: left; font-size: smaller;">In 2023, I applied for the Al Worden Endeavour Scholarship. This scholarship is awarded to students who have demonstrated a commitment and interest in STEM fields especially in space. 5 young people across Australia are given the opportunity to represent Australia at a global astronaut camp in USA. I didn’t get into the further rounds after applying.</p>
+          <img src="images/2023Rejectionendeavour.png" alt="Al Worden Endeavour Scholarship" style="width: 40%; height: auto; padding: 20px;">
+          <p style="text-align: left;font-size: smaller;">I then tried again in 2024. At the end of 2024, I was announced that I was apart of the top 20 finalists for the Al Worden Endeavour Scholarship. Though I didn't get the scholarship, it echoed an important message.</p>
+          <img src="images/2024endeavourResult.png" alt="Al Worden Endeavour Scholarship" style="width: 40%; height: auto; padding: 20px;">
+          <p style="text-align: left;font-size: smaller;">The video speech I presented in 2023 was very similar to the 2024 submission (copied and pasted the intro). Sure I had more experiences to share, however this time I didn't just give words I gave a tangible demonstration of what I had done through imagery. Even though it was a small portion of the video, in my opinion it spoke hundreds of words about me. I learnt that people want me to see what I love to do in action. They don't just want to hear it, they want to see it. This can be reaffirmed when I was at work experience. </p>
+          <p style="text-align: left;font-size: smaller;">This implicit feedback has made me understand what I need to do to action my dreams. Currently, I am building a robot and saying YES to everything, but more so creating things that I want to see. Just do it! Stop dreaming about what you want to be and just do it anyway. Maybe next year I will get there.</p>
+        </div>
+    </div>
+    <div>
+      <img id="cloud" src="images/cloud.png" alt="Cloud" style="position: absolute; top: 0; right: 10%; width: 20%; height: auto; z-index: -1; display: none;">
+    </div>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowRight') {
+            // Go to the next page
+            window.location.href = 'earthSunset.html'; // Update this to the next page
+          } else if (event.key === 'ArrowLeft') {
+            // Go to the previous page
+            window.location.href = 'earth.html'; // Update this to the previous page
+          }
+        });
+    </script>
+      
+</body>
+</html>

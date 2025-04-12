@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A hero's journey</title>
+    <link rel="stylesheet" href="herosstyles.css">
+    <script defer src="workings.js"></script>
+</head>
+<body style="background-image: url('images/Left\ -\ Sunrise.png');">
+    <header style="font-size: 30px; position: fixed; text-align: center; width: 100%; top: 20%; left: 35%;">
+        <h1 class="fade-in-text" style="color: #a4a962;" id="earthTitle">The Beginning</h1>
+    </header>
+    <blockquote id="blockquoteEarth" style="background-color: white;">Exploring the galaxy leaves you fulfilled, but it makes you yearn to go home. All you want to do is take a moment and reflect on the journey so far.</blockquote>
+    <button style="top: 50%; left: 50%; position: absolute; "onclick="earth()" id="button3">Press me</button>
+    <div style="position: absolute;  background-color: #a4a962; color: white; border-radius: 10px; padding: 20px; width: 30%; height: fit-content; top: 10%; left: 5%; " id="earthContent">
+        <h2 style="color: #F5EED0;"> How does this show interest, skills, capabilities and values?</h2>
+        <p style="font-size: 15px; text-align: left;">A digital frontier showcased the wide range of projects I have made. From food to games, these projects showcased my skill in programming and technology in a wide range of applications. They showed my love of problem solving, creativity and competence in visualising concepts through a digital medium. <br>
+            Each one unique to the other, a central theme of collaboration and connection has been shown in each one. The success has been a resultant of the feedback I have been given by my peers, emphasisng to the idea that constructive critiscm or having an open mind. They aren’t perfect, but they showcase my experimental nature to try something new and continue to work on it.
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowRight') {
+            // Go to the next page
+            window.location.href = 'earthDay.html'; // Update this to the next page
+          } 
+        });
+      </script>
+      
+</body>
+
+</html>

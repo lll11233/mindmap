@@ -1,0 +1,219 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+.bytesized-regular {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.cardo-regular {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.cardo-bold {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.cardo-regular-italic {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+
+/* General Styles */
+
+
+
+body {
+    font-family: "Cardo", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    width: fit fit-content;
+    height: fit fit-content;
+}
+
+header {
+    padding: 15px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: #eaeaea;
+    padding: 50px 0;
+}
+
+section {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    position: relative;
+}
+
+#introduction {
+    height: 400px;
+    text-align: left;
+    margin: 5%;
+}
+
+/* Project Section */
+.project {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.abthover img{
+
+    transition: 1s ease;
+}
+  
+.abthover img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    
+}
+
+
+
+/* Draggable Elements */
+
+#welcome{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 16px;
+    width: auto;
+    flex-direction: column;
+}
+
+
+#welcomeheader{
+    user-select: none; cursor: grab;
+    border-radius: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the header */
+
+
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+  
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+  
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#welcomeopen{
+    cursor: pointer; 
+    margin-left: 20px; 
+    backdrop-filter: blur(20px); 
+    background-color: rgba(0, 0, 0, 0.25); 
+    border-radius: 16%; 
+    text-align: center; 
+    padding: 8px 12px; 
+    color: white;
+    height: fit-content; 
+    transform: translateY(15px); 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+
+.main {
+    background-color: black;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.handle{
+    padding: 15px;
+    user-select: none; cursor: grab;
+    border-radius: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}

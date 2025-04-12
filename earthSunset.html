@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A hero's journey</title>
+    <link rel="stylesheet" href="herosstyles.css">
+    <script defer src="workings.js"></script>
+</head>
+<body style="background-image: url('images/sunset2.png');">
+    <header style="font-size: 30px; position: fixed; text-align: center; width: 100%; top: 20%; left: -30%;">
+        <h1 class="fade-in-text" style="color: white" id="earthTitle2">The future</h1>
+    </header>
+    <!-- <blockquote id="blockquoteDay" style="color: white; background: none; position: absolute; bottom: 0%;">Hello</blockquote> -->
+    <button style="top: 50%; left: 50%; position: absolute;"onclick="earthSunset()" id="button5">Press me</button>
+    <button style="top: 50%; left: 50%; position: absolute; display: none;"onclick="toWorm()" id="button6">Press me</button>
+    <div style="position: absolute;  background-color: #a4a962; color: white; border-radius: 10px; padding: 20px; width: 30%; height: fit-content; top: 10%; left: 5%; display: none; " id="earthContent3">
+      <h2 style="color: #F5EED0; padding: 10px;"> How might this impact your future aspirations, pathways or skill development?</h2>
+      <p style="font-size: 15px; text-align: left;">
+        By corroborating an array of personal projects, I can showcase the skillset I have to potential employers for internships at tech companies. These digital technology projects will help me grow my skills in programming so that I can use it for my future career. For example, astrophysicists have to be able to interpret data collected from telescopes to then model an illustration of the celestial body that is being investigated. Simulating a model can help prove or disprove findings in a cost effective manner.
+      </p>
+  </div>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            // Go to the next page
+            window.location.href = 'earthDay.html'; // Update this to the next page
+          } 
+        });
+      </script>
+      
+</body>
+</html>

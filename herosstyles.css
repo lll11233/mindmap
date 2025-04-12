@@ -1,0 +1,450 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+.bytesized-regular {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.cardo-regular {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.cardo-bold {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.cardo-regular-italic {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.mindmap{
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+header {
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#hero {
+    cursor: url('images/star.png'), auto;
+
+}
+
+.destination img{
+    transition: 1s ease;
+}
+  
+.destination img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    
+}
+
+#results{
+    position: absolute;
+    padding: 20px;
+    width: 95%;
+    top: 15%;
+    height: 59%;
+    justify-items: space-around;
+
+    
+}
+
+#results h2,p,h3{
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+h2{
+    font-family: "Cardo", serif;
+    color: #F5EED0; 
+}
+
+.gauge{
+    border-radius: 10px;
+    color: #F5EED0;
+    background-color: #254270;
+    font-family: "Cardo", serif;
+    padding: 10px;
+
+}
+
+.fuelQualities{
+    padding: 10px;
+    display: grid; 
+    place-items: center;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: black;
+
+    
+}
+
+.fuelQualities h2{
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+.fuelLevel{
+    background-color: #254270;
+    border-radius: 10px;
+    width: 90%;
+    height: 10px;
+
+}
+
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 0.5fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+.card {
+    background-color: #0a0a0a;
+    border: 2px solid #F5EED0;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 12px #0a0a0a;
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+}
+
+.trait-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+}
+
+
+.trait-name:hover {
+    color: #F5EED0;
+    cursor: pointer;
+    text-decoration:wavy underline;
+}
+
+.bar-container {
+    width: 80%;
+    height: 8px;
+    background-color: #0a0a0a;
+    border: 2px solid #F5EED0;
+    border-radius: 9999px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #F5EED0;
+    width: 0%;
+    transform-origin: left;
+    transition: width 1.2s ease-in-out;
+}
+
+.level {
+    margin-top: 0.5rem;
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+}
+
+
+.rocketship{
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-self: center; /* Vertical centering */
+
+}
+
+.windowDraggable{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    background-color: rgba(0, 0, 0, 0.125); 
+    padding: 10px; 
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    align-items: grid;
+    flex-direction: column;
+    display: none;
+    
+
+}
+
+.headerDraggable{
+    justify-content:space-between;
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.contentDraggable{
+    background-color: #C34016; 
+    border-radius: 10px;
+    height: 85%;
+    padding: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color:#C34016 #C34016;
+
+
+}
+
+.contentDraggable p{
+
+    font-family: "Cardo", serif;
+    color: #F5EED0;
+    font-size: 9px;
+    text-align:left;
+    padding: 5px;
+
+}
+#window{
+    background-color: rgba(0, 0, 0, 0.125);
+    backdrop-filter: blur(3px);
+    /* border: #C34016 5px solid; */
+    padding: auto;
+    border-radius: 10px;
+    z-index: 1;
+    
+
+}
+
+.controlPanel{
+    position: absolute; 
+    width: 97%;
+    background-color: #C34016; 
+    padding: 10px; 
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    margin: 1%;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+/* slideshow */
+
+.slides{
+    width: 90%;
+    height: 90%;
+    background-color: #254270;
+    justify-self: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: #254270 #254270;
+    /* scrollbar-width: thin; */
+    scroll-behavior: smooth;
+    direction: rtl; 
+    padding: 10px;
+    scrollbar-width: thin;  
+    
+}
+
+blockquote {
+    background-color: #254270;
+    color: #F5EED0;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Cardo", serif;
+    font-size: 15px;
+    direction: ltr;
+}
+
+
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: #F5EED0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    width: auto;
+} */
+
+/* Position the "next button" to the right */
+.next {
+    cursor:pointer;
+    position: absolute;
+    color: #F5EED0;
+    background: #254270;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: #F5EED0 5px solid;
+}
+
+#currentStatus{
+    width: 500px ;
+    height: 120px ;
+    background-color: #254270;
+    border: #F5EED0 5px solid;
+    border-radius: 10px;
+    transform: translate(25%, 0);
+}
+
+/* buttons */
+
+.button {
+    width: fit-content; 
+    height: fit-content; 
+    background-color: #254270; 
+    color: white; 
+    border-radius: 10px; 
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow{
+    font-size: 200px;
+    color: #F5EED0;
+    font-family: "Cardo", serif;
+    width: 200px;
+    height: 120px;
+    transform: translate(1150px, -225px);
+    cursor: pointer;
+
+}
+
+
+/* planets */
+
+
+.planet {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+    color: white;
+    /* background: radial-gradient(circle, #4e8aff, #002288); */
+    animation: float 6s ease-in-out infinite;
+    cursor: pointer;
+    /* box-shadow: 0 0 20px #4e8aff; */
+}
+.galaxyRocket{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+    color: white;
+    /* background: radial-gradient(circle, #4e8aff, #002288); */
+    animation: float 6s ease-in-out infinite;
+    /* box-shadow: 0 0 20px #4e8aff; */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Different animation delays to make them float independently */
+.planet:nth-child(1) { top: 40%; left: 90%; animation-delay: 0s; }
+.planet:nth-child(2) { top: 50%; left: 5%; animation-delay: 1s; }
+.planet:nth-child(3) { top: 70%; left: 30%; animation-delay: 2s; }
+.planet:nth-child(4) { top: 20%; left: 10%; animation-delay: 4s; }
+.planet:nth-child(5) { top: 60%; left: 80%; animation-delay: 4s; }
+.planet:nth-child(6) { top: 10%; left: 80%; animation-delay: 4s; }
+
+
+/* earth */
+
+/* .fade-in-text {
+
+    animation: fadeIn 5s;
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+   */
+
+#earthTitle {
+    transition: opacity 2s ease; /* Controls how the fade happens */
+    display: flex;
+}
+
+#earthContent {
+    transition: opacity 2s ease; /* Controls how the fade happens */
+    display: none;
+    flex-direction: column;
+}
+  
+
+blockquote{
+
+    border-left: 3px solid rgba(55, 53, 47, 0.4); /* Light grey line */
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: rgba(55, 53, 47, 0.8); /* Muted black */
+    font-size: 1rem;
+    line-height: 1.6;
+
+
+}
+/* 
+blockquote span{
+
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(55, 53, 47, 0.6);
+} */

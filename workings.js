@@ -354,7 +354,7 @@ function toWorm(){
 }
 
 function toWorkexperience(){
-  window.location.href = "workexperience.html";
+  window.location.href = "workExperience.html";
   
 }
 
